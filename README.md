@@ -28,3 +28,14 @@ Optionally, you may specify that the value defaults to the nearest whole rating 
 ```
 <wh-rating id="rating" use-multiples></wh-rating>
 ```
+
+Styling the hearts into another unicode icon is easy to do. Using CSS, you can overwrite the default heart icon.
+
+```
+<style>
+  @charset "UTF-8";
+  wh-rating {
+    --wh-rating-symbol: "♥";
+  }
+</style>
+```
