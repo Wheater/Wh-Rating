@@ -1,0 +1,21 @@
+{
+  "name": "wh-rating",
+  "version": "0.2.0",
+  "scripts": {
+    "transpile-rating-dev": "./node_modules/.bin/babel src/wh-rating.js --out-file lib/rating/wh-rating.js --presets=@babel/env",
+    "transpile-rating-prod": "./node_modules/.bin/babel src/wh-rating.js --out-file lib/rating/wh-rating.min.js --presets=@babel/env,minify",
+    "transpile-rating": "start npm run-script transpile-rating-dev && start npm run-script transpile-rating-prod"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-minify": "^0.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}

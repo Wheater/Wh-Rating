@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="src/wh-rating.js"></script>
+    <style>
+      @charset "UTF-8";
+      wh-rating {
+        --wh-rating-symbol: "♥";
+      }
+    </style>
+  </head>
+  <body>
+    <wh-rating id="wh-rating" value="25" use-multiples number-of-icons="12"></wh-rating>
+    <script>
+      //need to verify change event here
+      var $whRating = document.getElementById('wh-rating');
+      $whRating.addEventListener('change', (event) => {
+        console.log('Got change: ' + event.target.value);
+      });
+    </script>
+  </body>
+</html>
