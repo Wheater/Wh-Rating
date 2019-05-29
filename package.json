@@ -1,6 +1,19 @@
 {
   "name": "wh-rating",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "main": "lib/wh-rating.min.js",
+  "license": "MIT",
+  "url": "https://wheathouseconsulting.com",
+  "homepage": "https://github.com/Wheater/Wh-Rating", 
+  "keywords": [
+    "ui component",
+    "web component",
+    "rating"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wheater/Wh-Rating"
+  },
   "scripts": {
     "transpile-rating-dev": "./node_modules/.bin/babel src/wh-rating.js --out-file lib/rating/wh-rating.js --presets=@babel/env",
     "transpile-rating-prod": "./node_modules/.bin/babel src/wh-rating.js --out-file lib/rating/wh-rating.min.js --presets=@babel/env,minify",
