@@ -6,6 +6,10 @@ A simple vanilla JS web component used to create a rating experience for the end
 
 npm install wh-rating
 
+```
+<script src="./node_modules/wh-rating/lib/wh-rating.min.js"></script>
+```
+
 ## Usage
 
 ```
